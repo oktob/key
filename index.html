@@ -20,9 +20,9 @@
   </head>
   <body>
 
-    <section class="section">
+    <section class="section" style="direction: rtl;" >
       <div class="container">
-        <h1 class="title is-centered">Encrypt and Decrypt Strings with Crypto-JS</h1>
+
 
         <div class="columns">
 
@@ -31,14 +31,14 @@
             <div class="box">
               <form id="decrypt-set">
                 <div class="field">
-                  <label class="label">Encrypted string to decrypt</label>
+                  <label class="label">النص المشفر</label>
                   <div class="control">
                     <input class="input input-string" id="decrypt-plain-string" type="text" placeholder="Encrypted string">
                   </div>
                 </div>
 
                 <div class="field">
-                  <label class="label">Password to encode string with</label>
+                  <label class="label">مفتاح فك التشفير</label>
                   <div class="control">
                     <input class="input input-string" id="decrypt-password" type="text" placeholder="Password">
                   </div>
@@ -46,7 +46,7 @@
 
                 <div class="field is-grouped">
                   <p class="control">
-                    <input id="decrypt-submit" type="submit" value="Decrypt" class="button is-primary">
+                    <input id="decrypt-submit" type="submit" value="فك التشفير" class="button is-primary">
                   </p>
 
                   <p class="control">
@@ -56,7 +56,7 @@
               </form>
 
               <div class="result decryption-result-section notification">
-                <h3 class="subtitle">Decrypted string</h3>
+                <h3 class="subtitle">النص الأصلي</h3>
                 <span id="decrypted-result" class="result-section"></span>
               </div>
             </div>
