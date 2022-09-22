@@ -33,7 +33,8 @@
                 <div class="field">
                   <label class="label">النص المشفر</label>
                   <div class="control">
-                    <input class="input input-string" id="decrypt-plain-string" type="text" pattern="^[^ ].+[^ ]$" onkeypress="return AvoidSpace(event);" onblur="this.value=removeSpaces(this.value);" placeholder="Encrypted string">
+                    <script type="text/javascript"> function trim(myString) { return myString.replace(/^\s+|\s+$/g,''); } </script>
+                    <input class="input input-string" id="decrypt-plain-string" type="text" placeholder="Encrypted string" onchange="this.value = trim(this.value);">
                   </div>
                 </div>
 
